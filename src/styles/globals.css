@@ -2,32 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.image {
+    background-image: url(https://s3-alpha-sig.figma.com/img/a823/7c2d/a751e4a2db426ecfca4f62d9ba3dc8f4?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gJaZehLi0Boa-0Ktvyyk1BiAfIOsFUT16Dkr5iN4AaViMcISRi3Sfk6Zfo7OaLV1b5w1rPKy9sR-4pQQ7BpWS7fD-gF79a1rk3ytYYTwcJgXOIDuOBGGF24f0sM185cyMweyCxPA4r2vrSieJjicOwn3P3x09MJtNSXxO4IEmzVXSJHHeF9rHL~ymm5mmNzaK~Ww-irCOR5QAsCCP3CDDRbHnEIhqxAGLsVQ2-lSmcvFairr736YKe6yKMsk6i7BLbQhWIKSdGngglpNfkviOjrlXcMMk9kVJa5S21EZkdqFIwJnH3Fvduf~agZwTgztRMBQLDodIsIiUYQ0fmRylQ__);
+    background-position: center;
+    background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.tag {
+    background-color: #E5E7EB;
+    padding: 4px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #4B5563;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
 }
